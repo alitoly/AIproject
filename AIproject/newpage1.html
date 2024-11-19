@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Paper Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #E5E3DA;
+        }
+        .container {
+            max-width: 600px;
+            background: #bfb9ab;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        .button {
+            background-color: #998b72;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #000000;
+        }
+        .pdf-preview {
+            border: 1px solid #E5E3DA;
+            padding: 30px;
+            height: 300px;
+            overflow: auto;
+            margin: 20px 0;
+        }
+        .question-box {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #E5E3DA;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+<div class="container">
+    <h2>Research Paper Viewer</h2>
+    
+    <div class="pdf-preview">
+        <img src="assets/pdf-page1/5.png" alt="Books" class="product-item">
+        <img src="assets/pdf-page1/6.png" alt="Books" class="product-item">
+        <img src="assets/pdf-page1/7.png" alt="Books" class="product-item">
+        <img src="assets/pdf-page1/8.png" alt="Books" class="product-item">
+        <p>Preview of the first few pages of the PDF will appear here...</p>
+    </div>
+    
+    <button class="button">Summarize PDF</button>
+    
+    <input type="text" class="question-box" placeholder="Ask any questions about the paper...">
+    
+    <button class="button" onclick="openPDF()">Open Full PDF</button>
+</div>
+
+<script>
+    function openPDF() {
+        window.open('pdf/research1.pdf', '_blank');
+    }
+</script>
+
+
+</body>
+
+</html>
